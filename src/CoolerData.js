@@ -67,6 +67,7 @@ function CoolerData() {
                         <li key={index}>
                             <p>Temperature: {data.temperature}°F</p>
                             <p>Timestamp: {data.timestamp}</p>
+                            <p>------------------------------------------</p>
                         </li>
                     ))}
                 </ul>
