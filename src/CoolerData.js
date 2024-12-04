@@ -8,7 +8,7 @@ function CoolerData() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const dbRef = ref(database, "coolerData"); // Correct Firebase path
+                const dbRef = ref(database, "coolerData/barCooler"); // Correct Firebase path
                 const snapshot = await get(dbRef);
 
                 if (snapshot.exists()) {
@@ -60,7 +60,7 @@ function CoolerData() {
 
     return (
         <div>
-            <h2>Cooler Data</h2>
+            <h2>Bar Cooler Log</h2>
             {dataList.length > 0 ? (
                 <ul>
                     {dataList.map((data, index) => (
