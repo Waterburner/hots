@@ -16,3 +16,9 @@
 .App-link {
     color: #61dafb;
 }
+
+/* reverse how data is shown to show newest first */
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
